@@ -1,1 +1,1 @@
-# OSTEM-HACKATHON-2024
+# OSTEM Hackathon 2024
