@@ -1,9 +1,14 @@
 import './App.css';
+/* <meta name ="viewport" content="width = device-width, initial-scale 
+= 1"> */
 
-function App() {
+{/* <link rel="stylesheet" type="text/css" href=""> */}
+
+
+function App () {
   return (
-    <div className="App">
-        <h2>Letter Gen</h2>
+    <div className="Banner">
+        <h1>Letter Gen</h1>
     </div>
   );
 }
