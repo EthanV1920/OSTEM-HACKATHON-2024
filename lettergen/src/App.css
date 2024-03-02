@@ -1,8 +1,7 @@
 @import url('https://fonts.google.com/share?selection.family=Ojuju:wght@200..800');
 .Banner {
 
-  background-image: url('');
-  background-color: rgb(255, 255, 255); /* Banner background color (blue) */
+  background-color: hsl(283, 14%, 65%); /* Banner background color (blue) */
  
   padding: 15px; /* Padding around banner content */
   text-align: center; /* Center-align banner content */
