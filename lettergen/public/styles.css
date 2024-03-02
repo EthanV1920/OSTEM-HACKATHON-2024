@@ -15,8 +15,31 @@
 
 }
 
-.landingText p {
-
-size: 10vh;
-
+.landingText {
+    font-size: 24px;
+    text-align: center;
 }
+.bottomSection {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .textbox-container {
+    display: inline-block;
+    text-align: center;
+  }
+  
+  /* Style for the textarea */
+  .textbox {
+    width: 500px;
+    height: 300px; /* Set the height of the textarea for multiple lines */
+    padding: 10px;
+    
+  }
+  
+  /* Style for the button below the text box */
+  .bottomButton {
+    font-size: 20px;
+    margin-top: 10px; /* Add margin space on top of the button */
+    color:  lightgray;
+  }
