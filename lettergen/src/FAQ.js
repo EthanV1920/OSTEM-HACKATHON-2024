@@ -4,11 +4,10 @@ function App() {
   return (
     <div className="Banner">
       <h1>FAQ</h1>
-      <p class = "topText">AI Voting Right Bot</p>
         <div className="faq-question">
 
 What are some common forms of voter disenfranchisement?</div><div className="faq-answer">
-Common forms include voter ID laws, restrictive voter registration requirements, gerrymandering, felony disenfranchisement laws, limited access to polling stations, and misinformation campaigns.</div><div className="faq-question">
+Common forms include voter ID laws, restrictive voter registration requirements, gerrymandering, felony disenfranchisement laws, limited access to polling stations, voter intimidation, and misinformation campaigns.</div><div className="faq-question">
 How does voter disenfranchisement affect democracy?</div><div className="faq-answer">
 Voter disenfranchisement undermines the principles of democracy by restricting the participation of certain groups, leading to unequal representation and potentially skewing election outcomes.</div><div className="faq-question">
 What are some historical examples of voter disenfranchisement?</div><div className="faq-answer">

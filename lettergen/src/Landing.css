@@ -2,7 +2,6 @@
 body {
   margin: 0;
   font-family: "Jacquarda Bastarda 9", serif;
-  overflow: hidden;
 }
 
 .Banner {
@@ -39,7 +38,7 @@ body {
 }
 
 .space {
-  height: 30px;
+  height: 10px;
 }
 
 .exerpt {

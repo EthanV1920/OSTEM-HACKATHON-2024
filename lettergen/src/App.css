@@ -3,8 +3,6 @@
 .Banner {
 
   background-color: hsl(0, 0%, 100%); /* Banner background color (blue) */
- 
-  padding: 15px; /* Padding around banner content */
   text-align: center; /* Center-align banner content */
 
 }

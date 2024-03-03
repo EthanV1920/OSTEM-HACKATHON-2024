@@ -3,7 +3,7 @@ import './App.css';
 function App() {
   return (
     <div className="Banner">
-      <h1>Letter Gen</h1>
+      <h1>Voter Advocate</h1>
 
       <div className="bottomSection">
         <div className="textbox-container">

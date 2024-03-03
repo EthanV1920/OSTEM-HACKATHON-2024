@@ -1,5 +1,5 @@
 // Main.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
@@ -9,6 +9,24 @@ import Landing from './Landing';
 
 const Main = () => {
   const [currentPage, setCurrentPage] = useState('landing');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (currentPage !== 'faq') {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = '';
+      }
+    };
+
+    // Add a scroll event listener when the component mounts
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [currentPage]);
 
   const goToApp = () => {
     setCurrentPage('app');
