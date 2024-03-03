@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .button1 {
     position: relative;
     right: 10vh;
@@ -8,38 +9,70 @@
 .button2 {
 
 
+=======
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center;
+    color: black;
+    min-height: 10vh;
 }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Add margin for spacing between buttons and other content */
+>>>>>>> Stashed changes
+}
+
+.button1,
+.button2,
 .button3 {
+<<<<<<< Updated upstream
 
 
+=======
+    margin: 0 10px; /* Adjust the margin between buttons */
+>>>>>>> Stashed changes
 }
 
 .landingText {
     font-size: 24px;
     text-align: center;
 }
+
 .bottomSection {
     text-align: center;
     margin-top: 50px;
-  }
-  
-  .textbox-container {
+}
+
+.textbox-container {
     display: inline-block;
     text-align: center;
+<<<<<<< Updated upstream
   }
   
   /* Style for the textarea */
   .textbox {
+=======
+}
+
+.textbox {
+>>>>>>> Stashed changes
     width: 500px;
-    height: 300px; /* Set the height of the textarea for multiple lines */
+    height: 300px;
     padding: 10px;
-    
-  }
-  
-  /* Style for the button below the text box */
-  .bottomButton {
+}
+
+.bottomButton {
     font-size: 20px;
+<<<<<<< Updated upstream
     margin-top: 10px; /* Add margin space on top of the button */
     color:  lightgray;
   }
+=======
+    margin-top: 10px;
+    color: brown;
+}
+>>>>>>> Stashed changes
