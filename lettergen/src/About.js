@@ -8,11 +8,8 @@ function About() {
       <p class = "topText">AI Voting Right Bot</p>
         <div className="Text">
           <p>
-          Disenfranchisement is unfortunately becoming a prevalent issue in today's caustic political environment. Given the precarious state of our democracy, it is imperative that as many people as possible participate in elections. A crucial aspect of achieving this is ensuring the safety, security, and peace of mind of our voters.
-
-          Legalese, an unnecessarily complicated language, is designed to prevent people from being informed about their rights and the laws governing our processes. Our app, equipped with an encyclopedic knowledge of voting suppression laws in California, interprets any potential situation you may encounter while voting and determines its legality. If the action is deemed illegal, the app assists in guiding you through the process of submitting a formal complaint to the government regarding the transgression. In more serious cases, it alerts you to contact a lawyer.
-
-          The first step in addressing injustice is recognizing it, and our tool is designed to aid in that process.
+          
+Disenfranchisement is a growing issue in today's political landscape. To safeguard our democracy, it's crucial for everyone to participate in elections. Our app simplifies the complex language of voting laws in California, helping you understand your rights. If you encounter a potential issue, the app assesses its legality and guides you through filing a formal complaint or, in serious cases, prompts you to contact a lawyer. Our tool aims to recognize and address injustice, making the electoral process accessible to all.
 
           </p>
         </div>

@@ -18,7 +18,7 @@ body {
 }
 
 .Text {
-    max-width: 75%;
+    max-width: 50%;
     margin: 0 auto;
     padding-bottom: 0;
     padding-top: 0;
@@ -26,4 +26,5 @@ body {
     font-weight: 400;
     position: relative;
     text-align: center;
+    line-height: 3; /* Adjust the line height as needed */
 }

@@ -40,15 +40,14 @@ const Main = () => {
       document.getElementById('button2').removeEventListener('click', () => handleButtonClick('faq'));
       document.getElementById('button3').removeEventListener('click', () => handleButtonClick('about'));
     };
-  }, []); // Empty dependency array ensures the effect runs only once when the component mounts
-
+  });
   return (
     <React.StrictMode>
       <div class="container">
         <div class="button-container">
-          <button id="button1" class="button1 btn-outline-primary btn-lg">Home</button>
-          <button id="button2" class="button2 btn-outline-success btn-lg">FAQ</button>
-          <button id="button3" class="button3 btn-outline-danger btn-lg">About</button>
+          <button id="button1" class="button1 btn-lg">Home</button>
+          <button id="button2" class="button2 btn-lg">FAQ</button>
+          <button id="button3" class="button3 btn-lg">About</button>
         </div>
       </div>
       <div>

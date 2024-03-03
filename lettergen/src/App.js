@@ -11,7 +11,7 @@ function App() {
         </div>
         
         <div>
-          <button className="bottomButton btn-success btn-lg">Review Case</button>
+          <button className="bottomButton btn-lg">Review Case</button>
         </div>
       </div>
     </div>
