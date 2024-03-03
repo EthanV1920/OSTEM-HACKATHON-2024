@@ -11,7 +11,7 @@ function App() {
     const [isLoading, setIsLoading] = React.useState(false);
 
     const openai = new OpenAI({
-        apiKey: "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",
+        apiKey: "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",
         dangerouslyAllowBrowser: true
     });
 
@@ -86,12 +86,12 @@ function App() {
     const handleDownloadForm = () => {
     // Replace the link with your desired URL
     window.open('https://elections.cdn.sos.ca.gov/fraud-complaints/pdfs/english-voter-fraud-complaint-form.pdf', '_blank');
-    };
+  };
 
   return (
         <form method='post' onSubmit={handleSubmit}>
             <div className="Banner">
-                <h1 name="Form Name">Letter Gen</h1>
+                <h1 name="Form Name">Voter Advocate</h1>
                 <div className="bottomSection">
                     <div className="textbox-container" style={{ paddingBottom: '30px' }}>
                         <textarea
@@ -110,10 +110,10 @@ function App() {
                     </div>
                     <div>
                         {!isLoading && <button className="bottomButton btn-danger btn-lg">Review Case</button>}
+                        {isLoading && <img src={loadingGif} alt='Loading' id='LoadingGIF'style={{width: "100px", height: "100px"}}/>}
+                      <button type="button" className="Form btn-lg" onClick={handleDownloadForm}>Download Form</button>
                     </div>
                     <div>
-                        {isLoading && <img src={loadingGif} alt='Loading' id='LoadingGIF'style={{width: "100px", height: "100px"}}/>}
-                      <button className="Form btn-lg" onClick={handleDownloadForm}>Download Form</button>
         </div>
                 </div>
             </div>
