@@ -99,8 +99,8 @@ async function main() {
         }
     );
     const threadMessages = await openai.beta.threads.messages.list(
-        thread.id
-        // "thread_hVH1QV4jlqvEcN8PfIJrtpUJ"
+        // thread.id
+        "thread_HSgveMc3KP5lvUbI3BCIwd67"
     );
     const run = await openai.beta.threads.runs.create(
         thread.id,
@@ -121,9 +121,9 @@ async function main() {
     // console.log(thread);
     // console.log(threadMessages);
     // console.log(run);
-    // const messages = await openai.beta.threads.messages.list(
-    //     thread.id
-    // );
+    const messages = await openai.beta.threads.messages.list(
+        thread.id
+    );
     // console.log(runs.status);
     // console.log(threadMessages);
     // while (true) {
@@ -132,7 +132,7 @@ async function main() {
     //         break;
     //     }
     // }
-    for (const message of threadMessages.data) {
+    for (const message of messages.data) {
         console.log(message.content);
         console.log(message.thread_id);
     }
