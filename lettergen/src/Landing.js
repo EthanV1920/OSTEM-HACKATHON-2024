@@ -5,6 +5,7 @@ const Landing = ({ goToApp }) => {
   return (
     <div>
       <h1>Welcome to the Landing Page</h1>
+      <div></div>
       <button className="mainPage btn-lg" onClick={goToApp}>
         Check Your Case
       </button>

@@ -2,8 +2,6 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-
-// Importing pages
 import App from './App';
 import About from './About';
 import FAQ from './FAQ';
@@ -12,17 +10,14 @@ import Landing from './Landing';
 const Main = () => {
   const [currentPage, setCurrentPage] = useState('landing');
 
-  // Function to switch to the Landing page
-  const goToLanding = () => {
-    setCurrentPage('landing');
+  const goToApp = () => {
+    setCurrentPage('app');
   };
 
-  // Function to switch to the About page
   const goToAbout = () => {
     setCurrentPage('about');
   };
 
-  // Function to switch to the FAQ page
   const goToFAQ = () => {
     setCurrentPage('faq');
   };
@@ -33,15 +28,17 @@ const Main = () => {
         <button className="button2 btn-lg" onClick={goToFAQ}>
           FAQ
         </button>
-        <button className="button1 btn-lg" onClick={goToLanding}>{/*Home button*/}
 
+        <button className="button1 btn-lg" onClick={() => setCurrentPage('landing')}>
         </button>
+
         <button className="button3 btn-lg" onClick={goToAbout}>
           About
         </button>
       </div>
       <div>
-        {currentPage === 'landing' && <Landing />}
+        {currentPage === 'landing' && <Landing goToApp={goToApp} />}
+        {currentPage === 'app' && <App />}
         {currentPage === 'faq' && <FAQ />}
         {currentPage === 'about' && <About />}
       </div>
