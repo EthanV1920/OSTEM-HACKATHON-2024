@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800');
+
+body {
+    background-color: #f0f0f0; /* Light gray background color */
+    font-family: 'Ojuju', sans-serif;
+}
+
+.topText {
+    color: #333; /* Dark text color */
+    font-size: 20px;
+    text-align: center;
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.Banner h1 {
+    margin: 0;
+    color: #004080; /* Dark blue text color */
+    font-size: 50px;
+    text-align: center;
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.Text {
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 20px; /* Add padding for better spacing */
+    color: #333;
+    font-weight: 400;
+    position: relative;
+    text-align: center;
+}
