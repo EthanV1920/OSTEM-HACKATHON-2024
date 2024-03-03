@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import './index.css';
+
+// Importing pages 
 import App from './App';
 import About from './About';
 import FAQ from './FAQ'; // Import the FAQ component
