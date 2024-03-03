@@ -18,15 +18,15 @@ body {
 
 .pic {
 
-  width: 85vh;
+  width: 50%;
   height: auto;
   position: relative;
-  bottom: 67vh;
-  left: 83vh;
-  padding: 1vh;
-  border: 1vh black;
+  bottom: 60%;
+  left: 55%;
+  padding: 1%;
+  border: 30% black;
   border-style:solid;
-  border-width: 15 px;
+  border-width: 5px;
 }
 
 /* Landing page styles */
@@ -37,17 +37,14 @@ body {
 }
 
 .mainPage {
-  background-color: white;
-  border: 1px black;
-  border-style:double;
-  border-width: 10px;
+  width: 30%;
+  height: auto;
+  background: linear-gradient(45deg, RGB(255, 153, 153),  RGB(255, 204, 153), RGB(204, 255, 153),RGB(153, 204, 255),RGB(187, 153, 255),RGB(229, 204, 255),RGB(255, 204, 255));
   font-size: 20px;
   font-weight: bold;
-  cursor: pointer;
-  margin-top: 20px;
-  width: 30vh;
+  width: 30%;
   position: relative;
-  left: 65vh;
+  left: 35%;
 }
 
 .left-text{
@@ -55,8 +52,8 @@ body {
   font-family: 'Playfair Display', serif;
   /* margin: 0 0 20px 0; Adjusted margin for space, leave room for the picture below */
   position: relative;
-  left: 17vh;
-  top: 5vh;
+  left: 8%;
+  top: 5%;
 }
 
 .right-text {
@@ -64,7 +61,8 @@ body {
   font-family: 'Playfair Display', serif;
   /* margin: 0 0 20px 0; Adjusted margin for space, leave room for the picture below */
   position: relative;
-  left: 9vh;
+  left: 7%;
+
 }
 
 .space {
@@ -79,9 +77,10 @@ body {
   padding: 20px;
   /* font-family: "Jacquarda Bastarda 9", sans-serif; */
   font-family: 'georgia';
-  font-weight: bold;
+  /* font-weight: bold; */
   max-width: 35%;
   position: relative;
-  left: 5vh;
-  bottom: 3vh;
+  left: 2%;
+  bottom: 3%;
+  text-align: center;
 }
