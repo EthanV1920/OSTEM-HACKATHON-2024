@@ -1,10 +1,49 @@
 import React from 'react';
+import OpenAI from 'openai';
 import './App.css';
 import './askChatGPT.js'
+// const OpenAI = require("openai");
+// require("dotenv").config();
 
 function App(){
-    function askChatGPT() {
-        console.log("Ask Chat Triggered")
+    
+    
+    async function askChatGPT() {
+        const openai = new OpenAI({
+            apiKey: process.env.OPENAI_API_KEY,
+        });
+        console.log("Ask Chat Clicked");
+        const thread = await openai.beta.threads.create();
+        console.log(thread.id);
+        // userMessage = "My boss has decided to host a ballet-filling party I'm not sure how I feel about that.";
+        const message = await openai.beta.threads.messages.create(
+            thread.id,
+            {
+                role: "user",
+                content: "formData",
+            }
+        );
+        const threadMessages = await openai.beta.threads.messages.list(
+            thread.id
+        );
+        const run = await openai.beta.threads.runs.create(
+            thread.id,
+            { assistant_id: "asst_coEDRLofekur4e4eGG6wKfzL" }
+        );
+        while (true) {
+            const runs = await openai.beta.threads.runs.retrieve(
+                thread.id,
+                run.id
+            );
+            if (runs.status == "completed") {
+                break;
+            }
+            console.log(runs.status);
+        }
+        for (const message of threadMessages.data) {
+            console.log(message.content);
+            console.log(message.thread_id);
+        }
     }
     function handleSubmit(e) {
         // Prevent reload
