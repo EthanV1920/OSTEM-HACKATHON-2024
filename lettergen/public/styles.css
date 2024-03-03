@@ -25,6 +25,7 @@
     background-size: cover;
     background-color: hsl(0, 0%, 100%);
     border: none;
+    outline: none;
 
 }
 
@@ -35,6 +36,7 @@
     background-color: hsl(0, 0%, 100%);
     border: none;
     cursor: pointer;
+    outline: none;
 }
 
 .landingText {

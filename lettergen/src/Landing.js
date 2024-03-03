@@ -8,10 +8,12 @@ const Landing = ({ goToApp }) => {
       <p className="left-text">Voter</p>
       <p className="right-text">Advocate</p>
       <div className="space"></div>
+      
       <p className="exerpt"> Our platform is designed to assist you in determining whether your voting rights have been compromised, ensuring you can exercise your right to vote with comfort and safety.</p>
       <button className="mainPage btn-lg" onClick={goToApp}>
         Check Your Case
       </button>
+      <img src="7.jpg" className="pic"></img>
     </div>
   );
 };
