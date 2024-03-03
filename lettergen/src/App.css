@@ -1,9 +1,8 @@
 @import url('https://fonts.google.com/share?selection.family=Ojuju:wght@200..800');
+
 .Banner {
 
-  background-color: hsl(283, 14%, 65%); /* Banner background color (blue) */
- 
-  padding: 15px; /* Padding around banner content */
+  background-color: hsl(0, 0%, 100%); /* Banner background color (blue) */
   text-align: center; /* Center-align banner content */
 
 }
@@ -11,5 +10,5 @@
   margin: 0; /* Remove default margin */
   color: black; /* Text color */
   font-size: 50px;
-  font-family: "Jacquarda Bastarda 9", serif
+  font-family: "Jacquarda Bastarda 9", serif;
 }

@@ -5,7 +5,6 @@ function About() {
     <div className="Banner">
         <div></div>
       <h1>About</h1>
-      <p class = "topText">AI Voting Right Bot</p>
         <div className="Text">
           <p>
           

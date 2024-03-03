@@ -1,62 +1,68 @@
+// Main.js
 import React, { useState, useEffect } from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import About from './About'; 
-
-// require('dotenv').config();
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import About from './About';
+import FAQ from './FAQ';
+import Landing from './Landing';
 
 const Main = () => {
-  const [showApp, setShowApp] = useState(true);
-
-  // Function to switch to the App page
-  const goToApp = () => {
-    setShowApp(true);
-  };
-
-  // Function to switch to the About page
-  const goToAbout = () => {
-    setShowApp(false);
-  };
-
-  // Event listeners to handle button clicks
-  const handleButtonClick = (page) => {
-    if (page === 'home') {
-      goToApp();
-    } else if (page === 'about') {
-      goToAbout();
-    }
-  };
+  const [currentPage, setCurrentPage] = useState('landing');
 
   useEffect(() => {
-    // Add event listeners when the component mounts
-    document.getElementById('button1').addEventListener('click', () => handleButtonClick('home'));
-    document.getElementById('button2').addEventListener('click', () => handleButtonClick('faq'));
-    document.getElementById('button3').addEventListener('click', () => handleButtonClick('about'));
-
-    // Remove event listeners when the component unmounts
-    return () => {
-      document.getElementById('button1').removeEventListener('click', () => handleButtonClick('home'));
-      document.getElementById('button2').removeEventListener('click', () => handleButtonClick('faq'));
-      document.getElementById('button3').removeEventListener('click', () => handleButtonClick('about'));
+    const handleScroll = () => {
+      if (currentPage !== 'faq') {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = '';
+      }
     };
-  });
+
+    // Add a scroll event listener when the component mounts
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [currentPage]);
+
+  const goToApp = () => {
+    setCurrentPage('app');
+  };
+
+  const goToAbout = () => {
+    setCurrentPage('about');
+  };
+
+  const goToFAQ = () => {
+    setCurrentPage('faq');
+  };
+
   return (
-    <React.StrictMode>
-      <div class="container">
-        <div class="button-container">
-          <button id="button1" class="button1 btn-lg">Home</button>
-          <button id="button2" class="button2 btn-lg">FAQ</button>
-          <button id="button3" class="button3 btn-lg">About</button>
-        </div>
+    <div className="container">
+      <div className="button-container">
+        <button className="button2 btn-lg" onClick={goToFAQ}>
+          FAQ
+        </button>
+
+        <button className="button1 btn-lg" onClick={() => setCurrentPage('landing')}>
+        </button>
+
+        <button className="button3 btn-lg" onClick={goToAbout}>
+          About
+        </button>
       </div>
       <div>
-        {showApp ? <App /> : <About />}
+        {currentPage === 'landing' && <Landing goToApp={goToApp} />}
+        {currentPage === 'app' && <App />}
+        {currentPage === 'faq' && <FAQ />}
+        {currentPage === 'about' && <About />}
       </div>
-    </React.StrictMode>
+    </div>
   );
 };
 
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Main />);

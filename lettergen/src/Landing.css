@@ -1,0 +1,87 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: "Jacquarda Bastarda 9", serif;
+}
+
+.Banner {
+  background-color: hsl(0, 0%, 100%);
+  padding: 15px;
+  text-align: left;
+}
+
+.Banner h1 {
+  margin: 0;
+  color: black;
+  font-size: 50px;
+}
+
+.pic {
+
+  width: 85vh;
+  height: auto;
+  position: relative;
+  bottom: 67vh;
+  left: 83vh;
+  padding: 1vh;
+  border: 1vh black;
+  border-style:solid;
+  border-width: 15 px;
+}
+
+/* Landing page styles */
+.landing-container {
+  display: flex;
+  flex-direction: column; /* Change back to column for separate lines */
+  height: 100vh;
+}
+
+.mainPage {
+  background-color: white;
+  border: 1px black;
+  border-style:double;
+  border-width: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 30vh;
+  position: relative;
+  left: 65vh;
+}
+
+.left-text{
+  font-size: 75px;
+  font-family: 'Playfair Display', serif;
+  /* margin: 0 0 20px 0; Adjusted margin for space, leave room for the picture below */
+  position: relative;
+  left: 17vh;
+  top: 5vh;
+}
+
+.right-text {
+  font-size: 75px;
+  font-family: 'Playfair Display', serif;
+  /* margin: 0 0 20px 0; Adjusted margin for space, leave room for the picture below */
+  position: relative;
+  left: 9vh;
+}
+
+.space {
+  height: 10px;
+}
+
+.exerpt {
+  text-align: left;
+  color: #000000;
+  margin: 10px 0; /* Adjusted margin for better spacing */
+  font-size: 16px;
+  padding: 20px;
+  /* font-family: "Jacquarda Bastarda 9", sans-serif; */
+  font-family: 'georgia';
+  font-weight: bold;
+  max-width: 35%;
+  position: relative;
+  left: 5vh;
+  bottom: 3vh;
+}

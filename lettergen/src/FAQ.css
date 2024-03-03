@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800');
+
+body {
+    background-color: hsl(0, 0%, 100%); /* Banner background color (blue) */
+}
+
+.topText {
+    color: #000000; /* Dark text color */
+    font-size: 20px;
+    text-align: center;
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.Banner h1 {
+    margin: 0;
+    color: #000000; /* Dark blue text color */
+    font-size: 50px;
+    text-align: center;
+    padding: 20px; /* Add padding for better spacing */
+}
+.QuestionText{     
+		color: #000000; /* Dark text color */
+		margin: 10 auto;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px; /* Add padding for better spacing */
+			
+}
+.faq-question {
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+text-align: left;
+}
+
+.faq-answer {
+  
+  font-size: 16px;
+  color: #666;
+ /* margin-top: 10px; */
+text-align: left;
+}
+.Text {
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 20px; /* Add padding for better spacing */
+    color: #000000;
+    font-weight: 400;
+    position: relative;
+    text-align: center;
+}
