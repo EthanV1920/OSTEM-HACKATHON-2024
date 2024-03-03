@@ -1,19 +1,53 @@
-@import url('https://fonts.google.com/share?selection.family=Ojuju:wght@200..800');
+/* Global styles */
+body {
+  margin: 0;
+  font-family: "Jacquarda Bastarda 9", serif;
+  overflow: hidden;
+}
 
 .Banner {
-
-  background-color: hsl(0, 0%, 100%); /* Banner background color (blue) */
- 
-  padding: 15px; /* Padding around banner content */
-  text-align: center; /* Center-align banner content */
-
+  background-color: hsl(0, 0%, 100%);
+  padding: 15px;
+  text-align: left;
 }
+
 .Banner h1 {
-  margin: 0; /* Remove default margin */
-  color: black; /* Text color */
+  margin: 0;
+  color: black;
   font-size: 50px;
-  font-family: "Jacquarda Bastarda 9", serif
 }
-.mainPage{
-    align-items: center;
+
+/* Landing page styles */
+.landing-container {
+  display: flex;
+  flex-direction: column; /* Change back to column for separate lines */
+  height: 100vh;
+}
+
+.mainPage {
+  background-color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.left-text,
+.right-text {
+  font-size: 75px;
+  margin: 0 0 20px 0; /* Adjusted margin for space, leave room for the picture below */
+}
+
+.space {
+  height: 30px;
+}
+
+.exerpt {
+  text-align: left;
+  color: #000000;
+  margin: 10px 0; /* Adjusted margin for better spacing */
+  font-size: 16px;
+  padding: 20px;
+  font-family: "Jacquarda Bastarda 9", sans-serif;
+  max-width: 35%;
 }

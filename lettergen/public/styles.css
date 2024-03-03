@@ -14,13 +14,14 @@
     display: flex;
     justify-content: space-between; /* Adjusted to space buttons evenly */
     width: 100%; /* Make the button container take the full width */
-    max-width: 800px; /* Set a max-width to avoid buttons spreading too far */
+
     margin-top: 20px;
 }
 
 .button1 {
     width: 50px;
     height: 50px;
+    
     background-image: url('https://southernequality.org/wp-content/uploads/2019/03/BallotBoxThumb.png');
     background-size: cover;
 }
@@ -32,6 +33,7 @@
     background-color: hsl(0, 0%, 100%);
     border: none;
     cursor: pointer;
+    font-family: "Jacquarda Bastarda 9", sans-serif;
 }
 
 .landingText {
@@ -63,3 +65,4 @@
     border: none;
     margin-bottom: 10px;
 }
+

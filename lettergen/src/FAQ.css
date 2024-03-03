@@ -9,6 +9,7 @@ body {
     font-size: 20px;
     text-align: center;
     padding: 20px; /* Add padding for better spacing */
+    font-family: "Jacquarda Bastarda 9", sans-serif;
 }
 
 .Banner h1 {
@@ -17,17 +18,20 @@ body {
     font-size: 50px;
     text-align: center;
     padding: 20px; /* Add padding for better spacing */
+    font-family: "Jacquarda Bastarda 9", sans-serif;
 }
 .QuestionText{     
-		color: #000000; /* Dark text color */
-		margin: 10 auto;
+	color: #000000; /* Dark text color */
+	margin: 10 auto;
     font-size: 20px;
     text-align: center;
     padding: 20px; /* Add padding for better spacing */
+    font-family: "Jacquarda Bastarda 9", sans-serif;
 		
 		
 }
 .Text {
+    font-family: "Jacquarda Bastarda 9", sans-serif;
     max-width: 50%;
     margin: 0 auto;
     padding: 20px; /* Add padding for better spacing */
