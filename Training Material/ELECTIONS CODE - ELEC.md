@@ -278,3 +278,5 @@ ARTICLE 4. Corruption of Voting [18560 - 18578]  ( Article 4 enacted by Stats. 1
 
 18578.  Any person who applies for, or who votes or attempts to vote, a vote by mail ballot by fraudulently signing the name of a fictitious person, or of a regularly qualified voter, or of a person who is not qualified to vote, is guilty of a felony punishable by imprisonment pursuant to subdivision (h) of Section 1170 of the Penal Code for 16 months or two or three years, by a fine not exceeding one thousand dollars ($1,000), or by both that fine and imprisonment.
 (Amended by Stats. 2011, Ch. 15, Sec. 88. (AB 109) Effective April 4, 2011. Operative October 1, 2011, by Sec. 636 of Ch. 15, as amended by Stats. 2011, Ch. 39, Sec. 68.)
+
+14004. (a) An employer shall not require or request that an employee bring the employee’s vote by mail ballot to work or vote the employee’s vote by mail ballot at work.    (b) This section does not prohibit an employer from encouraging an employee to vote.
