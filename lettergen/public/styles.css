@@ -46,5 +46,8 @@
 .bottomButton {
     font-size: 20px;
     margin-top: 10px;
-    color: brown;
+    background-color: hsl(283, 14%, 65%); /* Set the background color of the buttons */
+    color: rgb(0, 0, 0);
+    border: none; /* Remove the borders on the buttons */
+    margin-bottom: 10px;
 }
