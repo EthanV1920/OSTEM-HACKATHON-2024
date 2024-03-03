@@ -14,7 +14,6 @@ class App extends React.Component{
                 <div className="textbox-container" style={{ paddingBottom: '30px' }}>
                     <textarea className="textbox" placeholder="Describe your Situation"></textarea>
                 </div>
-                <p class="topText">AI Voting Right Bot</p>
                 <div>
                     <button className="bottomButton btn-danger btn-lg" onClick={this.askChatGPT}>Review Case</button>
                 </div>
