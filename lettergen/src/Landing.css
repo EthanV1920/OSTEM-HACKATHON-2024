@@ -16,6 +16,15 @@ body {
   font-size: 50px;
 }
 
+.pic {
+
+  width: 85vh;
+  height: auto;
+  position: relative;
+  bottom: 60vh;
+  left: 80vh;
+}
+
 /* Landing page styles */
 .landing-container {
   display: flex;
@@ -31,7 +40,14 @@ body {
   margin-top: 20px;
 }
 
-.left-text,
+.left-text{
+  font-size: 75px;
+
+  margin: 0 0 20px 0; /* Adjusted margin for space, leave room for the picture below */
+  position: relative;
+  left: 7vh;
+}
+
 .right-text {
   font-size: 75px;
   margin: 0 0 20px 0; /* Adjusted margin for space, leave room for the picture below */
