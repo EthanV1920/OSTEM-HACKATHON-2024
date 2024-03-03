@@ -83,7 +83,12 @@ function App() {
         chatBox.innerHTML = e.target.value;
         console.log(chatBox.innerHTML);
     }
-    return (
+    const handleDownloadForm = () => {
+    // Replace the link with your desired URL
+    window.open('https://elections.cdn.sos.ca.gov/fraud-complaints/pdfs/english-voter-fraud-complaint-form.pdf', '_blank');
+    };
+
+  return (
         <form method='post' onSubmit={handleSubmit}>
             <div className="Banner">
                 <h1 name="Form Name">Letter Gen</h1>
@@ -108,7 +113,8 @@ function App() {
                     </div>
                     <div>
                         {isLoading && <img src={loadingGif} alt='Loading' id='LoadingGIF'style={{width: "100px", height: "100px"}}/>}
-                    </div>
+                      <button className="Form btn-lg" onClick={handleDownloadForm}>Download Form</button>
+        </div>
                 </div>
             </div>
         </form>
