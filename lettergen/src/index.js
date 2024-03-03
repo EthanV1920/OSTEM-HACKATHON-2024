@@ -28,13 +28,13 @@ const Main = () => {
   return (
     <div className="container">
       <div className="button-container">
-        <button id="button1" className="button1 btn-lg" onClick={goToApp}>
-          Home
-        </button>
-        <button id="button2" className="button2 btn-lg" onClick={goToFAQ}>
+      <button id="button2" className="button2 btn-lg" onClick={goToFAQ}> {/*FAQ BUTTON */}
           FAQ
         </button>
-        <button id="button3" className="button3 btn-lg" onClick={goToAbout}>
+        <button id="button1" className="button1 btn-lg" onClick={goToApp}>{/*Home BUTTON */}
+          
+        </button>
+        <button id="button3" className="button3 btn-lg" onClick={goToAbout}>{/*About BUTTON */}
           About
         </button>
       </div>

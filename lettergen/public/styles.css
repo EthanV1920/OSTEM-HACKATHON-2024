@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800');
 .container {
     display: flex;
     flex-direction: column;
@@ -5,7 +6,7 @@
     justify-content: center;
     color: black;
     min-height: 10vh;
-    background-color: hsl(283, 14%, 65%);
+    background-color: hsl(0, 0%, 100%);
 }
 
 .button-container {
@@ -14,12 +15,20 @@
     margin-top: 20px; /* Add margin for spacing between buttons and other content */
 }
 
-.button1,
+
 .button2,
 .button3 {
-    margin: 0 10px; /* Adjust the margin between buttons */
-    background-color: hsl(283, 14%, 65%); /* Set the background color of the buttons */
+    margin: 0 275px; /* Adjust the margin between buttons */
+    background-color: hsl(0, 0%, 100%); /* Set the background color of the buttons */
     border: none; /* Remove the borders on the buttons */
+}
+.button1{
+    width: 50px;
+    height: 50px;
+    margin: 0 275px; /* Adjust the margin between buttons */
+    border: none; /* Remove the borders on the buttons */
+    background-image: url('https://southernequality.org/wp-content/uploads/2019/03/BallotBoxThumb.png');
+    background-size: cover;
 }
 
 .landingText {
@@ -46,7 +55,7 @@
 .bottomButton {
     font-size: 20px;
     margin-top: 10px;
-    background-color: hsl(283, 14%, 65%); /* Set the background color of the buttons */
+    background-color: hsl(0, 0%, 100%); /* Set the background color of the buttons */
     color: rgb(0, 0, 0);
     border: none; /* Remove the borders on the buttons */
     margin-bottom: 10px;
