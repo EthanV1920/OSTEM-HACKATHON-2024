@@ -1,5 +1,6 @@
 import React from 'react';
 import OpenAI from 'openai';
+import loadingGif from './Loading.gif';
 import './App.css';
 import './askChatGPT.js'
 // const OpenAI = require("openai");
@@ -7,8 +8,10 @@ import './askChatGPT.js'
 
 function App() {
 
+    const [isLoading, setIsLoading] = React.useState(false);
+
     const openai = new OpenAI({
-        apiKey: "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",
+        apiKey: "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",
         dangerouslyAllowBrowser: true
     });
 
@@ -35,12 +38,15 @@ function App() {
                 assistant_id: "asst_coEDRLofekur4e4eGG6wKfzL"
             }
         );
+        
         while (true) {
             const runs = await openai.beta.threads.runs.retrieve(
                 thread.id,
                 run.id
             );
+            setIsLoading(true);
             if (runs.status == "completed") {
+                setIsLoading(false);
                 break;
             }
             console.log(runs.status);
@@ -98,8 +104,10 @@ function App() {
                             readOnly></textarea>
                     </div>
                     <div>
-                        <button className="bottomButton btn-danger btn-lg">Review Case</button>
-                        <img src='./Loading.gif' alt='Loading' />
+                        {!isLoading && <button className="bottomButton btn-danger btn-lg">Review Case</button>}
+                    </div>
+                    <div>
+                        {isLoading && <img src={loadingGif} alt='Loading' id='LoadingGIF'style={{width: "100px", height: "100px"}}/>}
                     </div>
                 </div>
             </div>
