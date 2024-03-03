@@ -1,29 +1,25 @@
 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
     justify-content: center;
     color: black;
+    min-height: 10vh;
+    background-color: hsl(283, 14%, 65%);
 }
 
-.button1 {
+.button-container {
+    display: flex;
     justify-content: center;
-    position: relative;
-    left: 61vh;
-    top: 10px;
-
+    margin-top: 20px; /* Add margin for spacing between buttons and other content */
 }
 
-.button2 {
-    justify-content: center;
-    position: relative;
-    left: 61vh;
-    top: 10px;
-}
-
+.button1,
+.button2,
 .button3 {
-    justify-content: center;
-    position: relative;
-    left: 61vh;
-    top: 10px;
-
+    margin: 0 10px; /* Adjust the margin between buttons */
+    background-color: hsl(283, 14%, 65%); /* Set the background color of the buttons */
+    border: none; /* Remove the borders on the buttons */
 }
 
 
@@ -31,27 +27,28 @@
     font-size: 24px;
     text-align: center;
 }
+
 .bottomSection {
     text-align: center;
     margin-top: 50px;
-  }
-  
-  .textbox-container {
+}
+
+.textbox-container {
     display: inline-block;
     text-align: center;
-  }
-  
-  /* Style for the text area */
-  .textbox {
+}
+
+.textbox {
     width: 500px;
-    height: 300px; /* Set the height of the textarea for multiple lines */
+    height: 300px;
     padding: 10px;
-    
-  }
-  
-  /* Style for the button below the text box */
-  .bottomButton {
+}
+
+.bottomButton {
     font-size: 20px;
-    margin-top: 10px; /* Add margin space on top of the button */
-    color:  brown;
-  }
+    margin-top: 10px;
+    background-color: hsl(283, 14%, 65%); /* Set the background color of the buttons */
+    color: rgb(0, 0, 0);
+    border: none; /* Remove the borders on the buttons */
+    margin-bottom: 10px;
+}
