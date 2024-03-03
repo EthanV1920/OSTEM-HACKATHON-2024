@@ -41,6 +41,21 @@
 
 }
 
+.Form {
+
+  /* border: 1px black;
+  border-style:double;
+  border-width: 10px; */
+  width: 30vh;
+  height: auto;
+  background: linear-gradient(45deg, RGB(255, 153, 153),  RGB(255, 204, 153), RGB(204, 255, 153),RGB(153, 204, 255),RGB(187, 153, 255),RGB(229, 204, 255),RGB(255, 204, 255));
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  /* animation: rainbow-animation 10s linear infinite; */
+
+}
+
 /* @keyframes rainbow-animation {
   0% { background-position: 0 0; }
   100% { background-position: 1500% 0; }

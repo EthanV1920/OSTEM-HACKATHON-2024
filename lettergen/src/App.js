@@ -12,6 +12,7 @@ function App() {
         
         <div>
           <button className="bottomButton btn-lg">Review Case</button>
+          <button className="Form btn-lg">Download Form</button>
         </div>
       </div>
     </div>
