@@ -13,7 +13,7 @@ const Landing = ({ goToApp }) => {
       <button className="mainPage btn-lg" onClick={goToApp}>
         Check Your Case
       </button>
-      <img src="1.jpg" className="pic"></img>
+      <img src="7.jpg" className="pic"></img>
     </div>
   );
 };
