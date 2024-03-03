@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import './index.css';
 import App from './App';
-import About from './About'; 
+import About from './About';
+import FAQ from './FAQ'; // Import the FAQ component
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -23,9 +25,17 @@ const Main = () => {
   const handleButtonClick = (page) => {
     if (page === 'home') {
       goToApp();
+    } else if (page === 'faq') {
+      // Update to navigate to the FAQ page
+      goToFAQ();
     } else if (page === 'about') {
       goToAbout();
     }
+  };
+
+  // Function to switch to the FAQ page
+  const goToFAQ = () => {
+    setShowApp(false);
   };
 
   useEffect(() => {
@@ -40,20 +50,28 @@ const Main = () => {
       document.getElementById('button2').removeEventListener('click', () => handleButtonClick('faq'));
       document.getElementById('button3').removeEventListener('click', () => handleButtonClick('about'));
     };
-  });
+  }, []);
+
   return (
-    <React.StrictMode>
-      <div class="container">
-        <div class="button-container">
-          <button id="button1" class="button1 btn-lg">Home</button>
-          <button id="button2" class="button2 btn-lg">FAQ</button>
-          <button id="button3" class="button3 btn-lg">About</button>
+    <Router>
+      <React.StrictMode>
+        <div className="container">
+          <div className="button-container">
+            <button id="button1" className="button1 btn-lg">Home</button>
+            {/* Use Link component for navigation to FAQ page */}
+            <Link to="/FAQ">
+              <button id="button2" className="button2 btn-lg">FAQ</button>
+            </Link>
+            <button id="button3" className="button3 btn-lg">About</button>
+          </div>
         </div>
-      </div>
-      <div>
-        {showApp ? <App /> : <About />}
-      </div>
-    </React.StrictMode>
+        <div>
+          {/* Add a Route for the FAQ page */}
+          <Route path="/FAQ" component={FAQ} />
+          {showApp ? <App /> : <About />}
+        </div>
+      </React.StrictMode>
+    </Router>
   );
 };
 
