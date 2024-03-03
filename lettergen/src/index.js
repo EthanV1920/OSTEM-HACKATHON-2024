@@ -1,18 +1,20 @@
+// Main.js
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-// Importing pages 
+// Importing pages
 import App from './App';
 import About from './About';
 import FAQ from './FAQ';
+import Landing from './Landing';
 
 const Main = () => {
-  const [currentPage, setCurrentPage] = useState('home');
+  const [currentPage, setCurrentPage] = useState('landing');
 
-  // Function to switch to the App page
-  const goToApp = () => {
-    setCurrentPage('home');
+  // Function to switch to the Landing page
+  const goToLanding = () => {
+    setCurrentPage('landing');
   };
 
   // Function to switch to the About page
@@ -28,18 +30,18 @@ const Main = () => {
   return (
     <div className="container">
       <div className="button-container">
-      <button id="button2" className="button2 btn-lg" onClick={goToFAQ}> {/*FAQ BUTTON */}
+        <button className="button2 btn-lg" onClick={goToFAQ}>
           FAQ
         </button>
-        <button id="button1" className="button1 btn-lg" onClick={goToApp}>{/*Home BUTTON */}
-          
+        <button className="button1 btn-lg" onClick={goToLanding}>{/*Home button*/}
+
         </button>
-        <button id="button3" className="button3 btn-lg" onClick={goToAbout}>{/*About BUTTON */}
+        <button className="button3 btn-lg" onClick={goToAbout}>
           About
         </button>
       </div>
       <div>
-        {currentPage === 'home' && <App />}
+        {currentPage === 'landing' && <Landing />}
         {currentPage === 'faq' && <FAQ />}
         {currentPage === 'about' && <About />}
       </div>

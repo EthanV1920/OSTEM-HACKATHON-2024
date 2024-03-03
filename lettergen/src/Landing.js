@@ -1,21 +1,15 @@
-import './Landing.css';
+// Landing.js
+import React from 'react';
 
-function Landing() {
+const Landing = ({ goToApp }) => {
   return (
-    <div className="Banner">
-      <h1>Letter Gen</h1>
-
-      <div className="bottomSection">
-        <div className="textbox-container">
-          <textarea className="textbox" placeholder="Tell us what happened"></textarea>
-        </div>
-        
-        <div>
-          <button className="bottomButton btn-lg">Review Case</button>
-        </div>
-      </div>
+    <div>
+      <h1>Welcome to the Landing Page</h1>
+      <button className="mainPage btn-lg" onClick={goToApp}>
+        Check Your Case
+      </button>
     </div>
   );
-}
+};
 
 export default Landing;

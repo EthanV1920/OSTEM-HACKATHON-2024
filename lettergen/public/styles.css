@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800');
+
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center items horizontally */
+    align-items: center;
     justify-content: center;
     color: black;
     min-height: 10vh;
@@ -11,24 +12,26 @@
 
 .button-container {
     display: flex;
-    justify-content: center;
-    margin-top: 20px; /* Add margin for spacing between buttons and other content */
+    justify-content: space-between; /* Adjusted to space buttons evenly */
+    width: 100%; /* Make the button container take the full width */
+    max-width: 800px; /* Set a max-width to avoid buttons spreading too far */
+    margin-top: 20px;
 }
 
+.button1 {
+    width: 150px;
+    height: 50px;
+    background-image: url('https://southernequality.org/wp-content/uploads/2019/03/BallotBoxThumb.png');
+    background-size: cover;
+}
 
 .button2,
 .button3 {
-    margin: 0 275px; /* Adjust the margin between buttons */
-    background-color: hsl(0, 0%, 100%); /* Set the background color of the buttons */
-    border: none; /* Remove the borders on the buttons */
-}
-.button1{
-    width: 50px;
+    width: 150px;
     height: 50px;
-    margin: 0 275px; /* Adjust the margin between buttons */
-    border: none; /* Remove the borders on the buttons */
-    background-image: url('https://southernequality.org/wp-content/uploads/2019/03/BallotBoxThumb.png');
-    background-size: cover;
+    background-color: hsl(0, 0%, 100%);
+    border: none;
+    cursor: pointer;
 }
 
 .landingText {
@@ -55,8 +58,8 @@
 .bottomButton {
     font-size: 20px;
     margin-top: 10px;
-    background-color: hsl(0, 0%, 100%); /* Set the background color of the buttons */
+    background-color: hsl(0, 0%, 100%);
     color: rgb(0, 0, 0);
-    border: none; /* Remove the borders on the buttons */
+    border: none;
     margin-bottom: 10px;
 }
