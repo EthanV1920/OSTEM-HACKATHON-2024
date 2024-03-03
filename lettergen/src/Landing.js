@@ -5,7 +5,7 @@ const Landing = ({ goToApp }) => {
   return (
     <div className="landing-container">
     <div className="space"></div>
-      <p className="left-text">Voter</p>
+      <p className="left-text"> AI Voter</p>
       <p className="right-text">Advocate</p>
       <div className="space"></div>
       
