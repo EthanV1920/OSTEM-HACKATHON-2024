@@ -3,7 +3,7 @@ import './FAQ.css';
 function App() {
   return (
     <div className="Banner">
-      <h1>About</h1>
+      <h1>FAQ</h1>
       <p class = "topText">AI Voting Right Bot</p>
         <div className="QuestionText">
 
