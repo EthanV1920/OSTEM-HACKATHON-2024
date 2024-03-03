@@ -1,22 +1,57 @@
+.container {
+    justify-content: center;
+    color: black;
+}
+
 .button1 {
+    justify-content: center;
     position: relative;
-    right: 10vh;
+    left: 61vh;
     top: 10px;
 
 }
 
 .button2 {
-
-
+    justify-content: center;
+    position: relative;
+    left: 61vh;
+    top: 10px;
 }
 
 .button3 {
-
-
-}
-
-.landingText p {
-
-size: 10vh;
+    /* justify-content: center; */
+    position: relative;
+    left: 61vh;
+    top: 10px;
 
 }
+
+
+.landingText {
+    font-size: 24px;
+    text-align: center;
+}
+.bottomSection {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .textbox-container {
+    display: inline-block;
+    text-align: center;
+  }
+  
+  /* Style for the text area */
+  .textbox {
+    width: 500px;
+    height: 300px; /* Set the height of the textarea for multiple lines */
+    padding: 10px;
+    
+  }
+  
+  /* Style for the button below the text box */
+  .bottomButton {
+    font-size: 20px;
+    margin-top: 10px; /* Add margin space on top of the button */
+    color:  brown;
+  }
