@@ -1,5 +1,5 @@
 @import url('https://fonts.google.com/share?selection.family=Ojuju:wght@200..800');
-
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Madimi+One&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 .Banner {
 
   background-color: hsl(0, 65%, 52%); /* Banner background color (blue) */
@@ -37,6 +37,7 @@
   background: linear-gradient(45deg, RGB(255, 153, 153),  RGB(255, 204, 153), RGB(204, 255, 153),RGB(153, 204, 255),RGB(187, 153, 255),RGB(229, 204, 255),RGB(255, 204, 255));
   font-size: 20px;
   font-weight: bold;
+font-family: "Madimi One", sans-serif;
   /* animation: rainbow-animation 10s linear infinite; */
 
 }
@@ -52,6 +53,7 @@
   font-size: 20px;
   font-weight: bold;
   border: none;
+font-family: "Madimi One", sans-serif;
   /* animation: rainbow-animation 10s linear infinite; */
 
 }
@@ -66,5 +68,5 @@
   margin: 0; /* Remove default margin */
   color: black; /* Text color */
   font-size: 50px;
-  font-family: "Jacquarda Bastarda 9", serif;
+  font-family: "Madimi One", sans-serif;
 }
