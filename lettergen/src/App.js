@@ -31,7 +31,7 @@ function App() {
         const run = await openai.beta.threads.runs.create(
             thread.id,
             {
-                instructions: "This is a person's experience relating to trying to vote in California, using the California Penal Code document, and the election code documentation, to determine if it would be in the user's best interest to fill out the CA Voter Fraud Form. There should only be one response generated and there should be no more than 500 words with no mentions of being unable to read the text files. Only return weather or not the user should fill out the form and any specific violations of the law that the user should mention in the form.",
+                instructions: "This is a person's experience relating to trying to vote in California, using the California Penal Code document, and the election code documentation, to determine if it would be in the user's best interest to fill out the CA Voter Fraud Form. If you recommend filling out the form please provide a summary of the clients' situation along with the exact violation codes they experienced as provided in your training set. There should only be one response generated and there should be no more than 500 words with no mentions of being unable to read the text files. Only return whether or not the user should fill out the form and any specific violations of the law that the user should mention in the form with the law code.",
                 assistant_id: "asst_coEDRLofekur4e4eGG6wKfzL"
             }
         );
@@ -99,6 +99,7 @@ function App() {
                     </div>
                     <div>
                         <button className="bottomButton btn-danger btn-lg">Review Case</button>
+                        <img src='./Loading.gif' alt='Loading' />
                     </div>
                 </div>
             </div>
