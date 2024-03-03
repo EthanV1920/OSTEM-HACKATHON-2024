@@ -14,9 +14,6 @@ function App() {
           <p class = "topText">AI Voting Right Bot</p>
         <div>
           <button className="bottomButton btn-danger btn-lg">Review Case</button>
-        
-        <div>
-          <button className="bottomButton btn-success btn-lg">Review Case</button>
         </div>
       </div>
     </div>
