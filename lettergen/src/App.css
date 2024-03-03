@@ -12,8 +12,6 @@
   padding: 15px; /* Padding around banner content */
   text-align: center; /* Center-align banner content */
 }
-
-
 .Banner h1 {
   margin: 0; /* Remove default margin */
   color: black; /* Text color */
