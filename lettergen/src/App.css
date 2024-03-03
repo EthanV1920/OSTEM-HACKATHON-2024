@@ -1,8 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&family=Tilt+Warp&display=swap');
+@import url('https://fonts.google.com/share?selection.family=Ojuju:wght@200..800');
 .Banner {
+<<<<<<< HEAD
   background-color: rgb(50, 50, 85); /* Banner background color (blue) */
+=======
+
+  background-color: hsl(283, 14%, 65%); /* Banner background color (blue) */
+>>>>>>> ad32141d5a463720c77a620611b86de0f4863176
  
-  padding: 20px; /* Padding around banner content */
+  padding: 15px; /* Padding around banner content */
   text-align: center; /* Center-align banner content */
 }
 

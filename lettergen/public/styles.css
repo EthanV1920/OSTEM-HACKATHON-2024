@@ -26,7 +26,10 @@
 
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ad32141d5a463720c77a620611b86de0f4863176
 .landingText {
     font-size: 24px;
     text-align: center;
@@ -41,7 +44,11 @@
     text-align: center;
   }
   
+<<<<<<< HEAD
   /* Style for the text area */
+=======
+  /* Style for the textarea */
+>>>>>>> ad32141d5a463720c77a620611b86de0f4863176
   .textbox {
     width: 500px;
     height: 300px; /* Set the height of the textarea for multiple lines */
@@ -53,5 +60,10 @@
   .bottomButton {
     font-size: 20px;
     margin-top: 10px; /* Add margin space on top of the button */
+<<<<<<< HEAD
     color:  brown;
   }
+=======
+    color:  lightgray;
+  }
+>>>>>>> ad32141d5a463720c77a620611b86de0f4863176

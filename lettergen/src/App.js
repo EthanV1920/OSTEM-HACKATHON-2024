@@ -1,9 +1,4 @@
 import './App.css';
-/* <meta name ="viewport" content="width = device-width, initial-scale 
-= 1"> */
-
-{/* <link rel="stylesheet" type="text/css" href=""> */}
-
 
 
 function App() {
@@ -15,9 +10,13 @@ function App() {
         <div className="textbox-container">
           <textarea className="textbox" placeholder="Tell us what happened"></textarea>
         </div>
+
           <p class = "topText">AI Voting Right Bot</p>
         <div>
           <button className="bottomButton btn-danger btn-lg">Review Case</button>
+        
+        <div>
+          <button className="bottomButton btn-success btn-lg">Review Case</button>
         </div>
       </div>
     </div>
