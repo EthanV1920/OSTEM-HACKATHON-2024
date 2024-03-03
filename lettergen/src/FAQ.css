@@ -22,17 +22,17 @@ body {
 		color: #000000; /* Dark text color */
 		margin: 10 auto;
     font-size: 20px;
-    text-align: left;
+    text-align: center;
     padding: 20px; /* Add padding for better spacing */
 		
 		
 }
 .Text {
-    max-width: 75%;
+    max-width: 50%;
     margin: 0 auto;
     padding: 20px; /* Add padding for better spacing */
-    color: #333;
+    color: #000000;
     font-weight: 400;
     position: relative;
-    text-align: right;
+    text-align: center;
 }
