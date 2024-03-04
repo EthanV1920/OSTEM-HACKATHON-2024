@@ -11,7 +11,7 @@ function App() {
     const [isLoading, setIsLoading] = React.useState(false);
 
     const openai = new OpenAI({
-        apiKey: "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",
+        apiKey: "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",
         dangerouslyAllowBrowser: true
     });
 
@@ -57,7 +57,9 @@ function App() {
         );
 
         let outputBox = document.getElementById('outputBox');
-        for (const message of messages.data) {
+        outputBox.value = '';
+        for (let i = 0; i < messages.data.length - 1; i++) {
+            const message = messages.data[i];
             const currentMessage = Object.entries(message.content);
             console.log(currentMessage[0][1].text);
             outputBox.value += currentMessage[0][1].text.value +  '\n';
@@ -110,7 +112,7 @@ function App() {
                     </div>
                     <div>
                         {!isLoading && <button className="bottomButton btn-danger btn-lg">Review Case</button>}
-                        {isLoading && <img src={loadingGif} alt='Loading' id='LoadingGIF'style={{width: "100px", height: "100px"}}/>}
+                        {isLoading && <img src={loadingGif} alt='Loading' id='LoadingGIF'style={{width: "60px", height: "60px"}}/>}
                       <button type="button" className="Form btn-lg" onClick={handleDownloadForm}>Download Form</button>
                     </div>
                     <div>
